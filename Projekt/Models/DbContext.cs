@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Projekt.Models
 {
-    public class SDBContext : DbContext
+    public class ProjektDBContext : DbContext
     {
-        public SDBContext(DbContextOptions<SDBContext> options)
+        public ProjektDBContext(DbContextOptions<ProjektDBContext> options)
           : base(options)
         { }
 
