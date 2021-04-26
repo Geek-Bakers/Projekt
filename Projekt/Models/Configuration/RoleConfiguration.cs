@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 /// <summary>
-/// This table is to Role Config
+/// This class includes Role table configuration
 /// </summary>
 namespace Projekt.Models.Configuration
 {

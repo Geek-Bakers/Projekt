@@ -5,6 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/// <summary>
+/// This class includes User table configuration
+/// </summary>
+
 namespace Projekt.Models.Configuration
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>

@@ -5,6 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/// <summary>
+/// This class includes Resource table configuration
+/// </summary>
+
 namespace Projekt.Models.Configuration
 {
     public class ResourceConfiguration : IEntityTypeConfiguration<Resource>
