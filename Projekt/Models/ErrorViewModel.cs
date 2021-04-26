@@ -1,5 +1,9 @@
 using System;
 
+/// <summary>
+/// Automatic error Class from template
+/// </summary>
+
 namespace Projekt.Models
 {
     public class ErrorViewModel

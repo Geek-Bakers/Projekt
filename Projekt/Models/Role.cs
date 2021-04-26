@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/// <summary>
+/// This is Role DB table
+/// </summary>
+
 namespace Projekt.Models
 {
     public class Role

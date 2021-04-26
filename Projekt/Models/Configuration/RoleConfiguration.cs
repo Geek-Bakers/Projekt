@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/// <summary>
+/// This table is to Role Config
+/// </summary>
 namespace Projekt.Models.Configuration
 {
     public class RoleConfiguration : IEntityTypeConfiguration<Role>

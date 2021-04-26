@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/// <summary>
+/// This is user DB table
+/// </summary>
 namespace Projekt.Models
 {
     public class User
