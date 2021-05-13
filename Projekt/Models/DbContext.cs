@@ -1,18 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Projekt.Models;
 using Projekt.Models.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-/// <summary>
-/// This class includes DBsets
-/// </summary>
-namespace Projekt.Models
+namespace SDBWebAPI.Models
 {
-    public class ProjektDBContext : DbContext
+    public class SDBContext : DbContext
     {
-        public ProjektDBContext(DbContextOptions<ProjektDBContext> options)
+        public SDBContext(DbContextOptions<SDBContext> options)
           : base(options)
         { }
 
@@ -22,9 +20,9 @@ namespace Projekt.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new UserConfiguration());
-            modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new ResourceConfiguration());
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
             base.OnModelCreating(modelBuilder);
         }
     }
