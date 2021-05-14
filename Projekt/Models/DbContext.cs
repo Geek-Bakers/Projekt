@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SDBWebAPI.Models
+namespace Projekt.Models
 {
     public class SDBContext : DbContext
     {
