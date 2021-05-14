@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Projekt.Models;
+using Projekt.Services.Implementacje;
+using Projekt.Services.Interfejsy;
 using SDBWebAPI.Models;
 using System;
 using System.Collections.Generic;
@@ -36,6 +38,10 @@ namespace Projekt
                        .AllowAnyMethod()
                        .AllowAnyHeader();
             }));
+            services.AddScoped<SDBContext, SDBContext>();
+            services.AddScoped<IRoleService, RoleService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
